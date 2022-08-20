@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: #ffffff;
+    background: #F9F7F4;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
@@ -41,13 +42,25 @@ h3 {
     line-height: 122%; /* or 43px */
 }
 
+.p-normal{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+}
+
 .p-big {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 23px;
     line-height: 122%;
 }
 
 .p-small {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-size: 17px;
     line-height: 142%;
     letter-spacing: -0.01em;
@@ -56,7 +69,7 @@ h3 {
 /*Container*/
 .container {
     width: 100%;
-    max-width: 1168px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -245,6 +258,11 @@ h3 {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.tours__item:hover .tours__item__button{
+    background: rgba(40, 101, 98, 1);
 }
 
 .tours__item__title {
@@ -278,15 +296,93 @@ h3 {
 }
 
 .tours__item-6 {
+
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%,
     rgba(0, 0, 0, 0.5) 100%), url("assets/images/tour_images/card_tour_photo-6.png");
 }
 
 .tours__item__button {
+    position: absolute;
+    bottom: 43px;
+    left: 30px;
     display: flex;
     justify-content: flex-start;
+    background: rgba(40, 101, 98, 0);
+    border-radius: 50px;
+    padding: 7px 20px;
 }
 
 .tours__item__button-text {
     margin-right: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*Form*/
+.form{
+    margin-top: 105px;
+}
+
+.form__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form__title{
+    margin-bottom: 30px;
+}
+
+.form__text{
+    max-width: 418px;
+    text-align: center;
+    color: #A6A6A6;
+    margin-bottom: 100px;
+}
+
+.form__body{
+    width: 100%;
+    border-radius: 50px;
+    background: #ffffff;
+    padding: 70px;
+}
+
+.form__body__row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+}
+
+.form__body__item{
+    flex-basis: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.form__body__label{
+    color: #1B1F2B;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form__body__input{
+    width: 100%;
+    background: #F9F7F4;
+    border: 1px solid #F4F0E9;
+    border-radius: 10px;
+    padding: 19px;
+}
+
+.form__body__input::placeholder{
+    color: #A6A6A6;
+}
+
+.form__body__item-button{
+    position: absolute;
+    right: 24px;
+    bottom: 28px;
 }
