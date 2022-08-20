@@ -156,7 +156,7 @@
                             <img src="assets/icons/angle_brace.png" alt="" class="form__body__item-button">
                         </div>
 
-                    </div>
+                    </div><!--Row1-->
 
                     <div class="form__body__row">
 
@@ -172,23 +172,46 @@
                                    placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
                         </div>
 
-                    </div>
+                    </div><!--Row2-->
 
                     <div class="form__body__row">
 
                         <div class="form__body__item">
                             <label class="form__body__label" for="dateFrom">Дата от</label>
-                            <input class="form__body__input p-normal" id="dateFrom" type="date">
+                            <input class="form__body__input p-normal" id="dateFrom" type="text"
+                                   placeholder="ДД.ММ.ГГГГ">
                         </div>
 
                         <div class="form__body__item">
                             <label class="form__body__label" for="dateTo">Дата до</label>
-                            <input class="form__body__input p-normal" id="dateTo" type="date">
+                            <input class="form__body__input p-normal" id="dateTo" type="text" placeholder="ДД.ММ.ГГГГ">
                         </div>
 
+                    </div><!--Row3-->
+
+                    <div class="form__body__row">
+                        <div class="form__body__comment">
+                            <label class="form__body__label">Комментарий</label>
+                            <textarea class="form__body__comment__textarea"></textarea>
+                        </div>
+                    </div><!--Row4-->
+
+                    <div class="form__body__radio">
+                        <label class="form__body__label">Вам есть 18 лет?</label>
+                        <div class="form__body__radioBlock">
+                            <input class="form__body__radioButton" type="radio" value="yes" id="old" name="age">
+                            <label class="form__body__label" for="old">Да</label>
+                            <input class="form__body__radioButton" type="radio" value="no" id="young" name="age">
+                            <label class="form__body__label" for="young">Нет</label>
+                        </div>
                     </div>
 
-                </form>
+                    <div class="form__body__checkbox">
+                        <input type="checkbox">
+                        <p class="form__body__text p-small">Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span></p>
+                    </div>
+
+                </form><!--Form-->
             </div>
         </div>
     </div>
