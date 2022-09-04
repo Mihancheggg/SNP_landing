@@ -1385,7 +1385,19 @@ footer {
     }
 }
 
+@media screen and (min-width: 360px){
+    br{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 360px) {
+
+    br{
+        display: initial;
+    }
+
+    /*Intro*/
 
     /*Tours*/
     .tours__link{
@@ -1446,6 +1458,10 @@ footer {
         margin-left: -13px;
     }
 
+    .form__body__text{
+        letter-spacing: 0.01em;
+    }
+
     .form__body__text:before{
         top: 15%;
         left: 6px;
@@ -1492,6 +1508,45 @@ footer {
     .stories__inner{
         margin-top: 56px;
     }
+
+    .stories__item{
+        margin-bottom: 20px;
+    }
+
+    .stories__item__title{
+        letter-spacing: 0.02em;
+    }
+
+    .stories__item__footer{
+        bottom: 23px;
+        left: 10px;
+    }
+
+    /*Offer*/
+    .offer{
+        margin-top: 56px;
+    }
+
+    .offer__img{
+        width: 130px;
+        height: 133px;
+        border-radius: 20px;
+    }
+
+    .offer__textBlock{
+        padding: 0 14px;
+    }
+
+    .offer__title{
+        letter-spacing: 0.02em;
+    }
+
+    /*Footer*/
+    footer{
+        margin-top: 75px;
+        padding: 22px 0;
+    }
+
 }
 
 
