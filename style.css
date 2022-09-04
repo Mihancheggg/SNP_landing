@@ -485,7 +485,7 @@ h3 {
     height: 26px;
     width: 26px;
     background-color: #FFFFFF;
-    border: 2px solid #1B1F2B;
+    border: 1px solid #1B1F2B;
     border-radius: 50%;
 }
 
@@ -498,7 +498,6 @@ h3 {
     top: 4px;
     left: 4px;
     border-radius: 50%;
-
 }
 
 .form__body__checkbox {
@@ -532,7 +531,7 @@ h3 {
     width: 26px;
     color: #1B1F2B;
     background-color: #FFFFFF;
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 5px;
 }
 
@@ -1086,6 +1085,14 @@ footer {
         line-height: 142%;
     }
 
+    .section-header h2 {
+        margin-bottom: 20px;
+    }
+
+    .section-header{
+        margin-bottom: 50px;
+    }
+
     /*Nav*/
     .nav {
         display: none;
@@ -1130,7 +1137,29 @@ footer {
     }
 
     /*Form*/
+    .form__body__radioBlock-item .form__body__label:before {
+        transform: translate3d(-35%, -50%, 0);
+        height: 20px;
+        width: 20px;
+    }
 
+    .form__body__radioButton:checked + .form__body__radioBlock-item .form__body__label:before {
+        width: 10px;
+        height: 10px;
+        top: 4px;
+        left: 4px;
+        border-radius: 50%;
+    }
+
+    .form__body__text:before {
+        height: 20px;
+        width: 20px;
+        border-radius: 4px;
+    }
+
+    .form__body__check:checked + .form__body__text:before {
+        background: #FFFFFF url("./assets/icons/Rectangle 36 (Stroke).svg") no-repeat center center/17px 10px;
+    }
 
     /*Footer*/
     .footer__linkBlock {
@@ -1358,6 +1387,111 @@ footer {
 
 @media screen and (max-width: 360px) {
 
+    /*Tours*/
+    .tours__link{
+        padding-bottom: 10px;
+    }
+    .tours__link:nth-child(3) {
+        padding-right: 0;
+    }
+
+    .tours__items{
+        margin-top: 40px;
+    }
+
+    /*Form*/
+    .form{
+        margin-top: 58px;
+    }
+    .form__title{
+        letter-spacing: 0.02em;
+        margin-bottom: 15px;
+    }
+
+    .form__body{
+        padding: 20px;
+    }
+
+    .form .section-header{
+        margin-bottom: 40px;
+    }
+
+    .form__body__row{
+        margin-bottom: 0;
+    }
+
+    .form__body__input{
+        padding: 9.5px;
+    }
+
+    .form__body__item-button{
+        right: 15px;
+        bottom: 18px;
+    }
+
+    .form__body__comment__textarea{
+        min-height: 132px;
+    }
+
+    .form__body__radio {
+        margin-top: 23px;
+    }
+
+    .form__body__radioBlock-item .form__body__label{
+        padding-left: 22px;
+    }
+
+    .form__body__checkbox{
+        margin-top: 22px;
+        margin-left: -13px;
+    }
+
+    .form__body__text:before{
+        top: 15%;
+        left: 6px;
+    }
+
+    .form__body__buttonBlock{
+        margin-bottom: 20px;
+    }
+
+    /*Clients*/
+    .clients{
+        margin-top: 75px;
+    }
+
+    .clients__title{
+        letter-spacing: 0.02em;
+    }
+
+    .clients__feedback{
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .clients__feedback__footer{
+        margin-top: 43px;
+        align-items: center;
+    }
+
+    .clients__feedback__data{
+        padding-top: 15px;
+    }
+
+    .clients__name{
+        margin-bottom:10px;
+        letter-spacing: 0.05em;
+    }
+
+    /*Photos*/
+    .photos{
+        margin-top: 54px;
+    }
+
+    /*Stories*/
+    .stories__inner{
+        margin-top: 56px;
+    }
 }
 
 
