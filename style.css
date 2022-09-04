@@ -249,16 +249,6 @@ h3 {
     color: #EFA501;
 }
 
-.active:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    margin: 5px 0;
-    background-color: #EFA501;
-    opacity: 1;
-}
-
 @media screen and (min-width: 1024px) {
     .tours__link:after {
         content: "";
@@ -467,20 +457,48 @@ h3 {
     align-items: center;
 }
 
+.form__body__radioBlock-item {
+    margin-left: 9px;
+    margin-right: 29px;
+}
+
 .form__body__radioButton {
-    width: 26px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.form__body__radioBlock-item .form__body__label {
+    position: relative;
+    padding-left: 30px;
+    color: #A6A6A6;
+}
+
+
+.form__body__radioBlock-item .form__body__label:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 0;
+    transform: translate3d(-35%, -50%, 0);
     height: 26px;
-    background: #1B1F2B;
-    margin: -5px 11px 0 0;
-    filter: grayscale(100%);
+    width: 26px;
+    background-color: #FFFFFF;
+    border: 2px solid #1B1F2B;
+    border-radius: 50%;
 }
 
-.form__body__radioBlock .form__body__label {
-    margin-right: 32px;
-}
-
-.form__body__radioBlock .form__body__label:after {
+.form__body__radioButton:checked + .form__body__radioBlock-item .form__body__label:before {
+    content: "";
+    width: 12px;
+    height: 12px;
     background-color: #1B1F2B;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+
 }
 
 .form__body__checkbox {
@@ -504,7 +522,7 @@ h3 {
     color: #A6A6A6;
 }
 
-.form__body__text::before {
+.form__body__text:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -1100,6 +1118,31 @@ footer {
         bottom: 20px;
         left: 5px;
     }
+
+    .active:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin: -1px;
+        background-color: #EFA501;
+        opacity: 1;
+    }
+
+    /*Form*/
+
+
+    /*Footer*/
+    .footer__linkBlock {
+        width: 314px;
+    }
+
+    .footer__link__icon-container {
+        height: 22px;
+        width: 22px;
+        padding: 4px 4px;
+        margin-right: 5px;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -1189,6 +1232,10 @@ footer {
         align-items: center;
     }
 
+    .offer__title {
+        text-align: center;
+    }
+
     .offer__text {
         text-align: center;
     }
@@ -1222,32 +1269,31 @@ footer {
     }
 
     /*Intro*/
-    .intro{
+    .intro {
         height: 488px;
     }
 
-    .intro__title{
+    .intro__title {
         margin-top: 89px;
         margin-bottom: 40px;
     }
 
-    .intro__text{
+    .intro__text {
         padding: 0 5px;
         margin-bottom: 40px;
     }
 
     /*Tours*/
-
-    .tours__inner{
+    .tours__inner {
         margin-top: 76px;
     }
 
-    .tours__title{
+    .tours__title {
         letter-spacing: 0.02em;
         margin-bottom: 30px;
     }
 
-    .tours__menu{
+    .tours__menu {
 
     }
 
@@ -1309,3 +1355,9 @@ footer {
         padding-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 360px) {
+
+}
+
+
