@@ -489,15 +489,8 @@ h3 {
     border-radius: 50%;
 }
 
-.form__body__radioButton:checked + .form__body__radioBlock-item .form__body__label:before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    background-color: #1B1F2B;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    border-radius: 50%;
+.form__body__radioButton:checked + .form__body__label:before {
+    background: #ffffff url("./assets/icons/bigDot.svg") no-repeat center center/12px 12px;
 }
 
 .form__body__checkbox {
@@ -1143,12 +1136,8 @@ footer {
         width: 20px;
     }
 
-    .form__body__radioButton:checked + .form__body__radioBlock-item .form__body__label:before {
-        width: 10px;
-        height: 10px;
-        top: 4px;
-        left: 4px;
-        border-radius: 50%;
+    .form__body__radioButton:checked + .form__body__label:before {
+        background: #ffffff url("./assets/icons/bigDot.svg") no-repeat center center/9px 9px;
     }
 
     .form__body__text:before {
