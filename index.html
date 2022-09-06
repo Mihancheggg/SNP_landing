@@ -31,7 +31,8 @@
         <div class="container">
             <div class="intro__inner">
                 <h1 class="intro__title">Идеальные путешествия существуют</h1>
-                <p class="intro__text p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                <p class="intro__text p-normal">Идейные соображения высшего порядка, а также рамки и место обучения
+                    кадров</p>
                 <a href="#" class="intro__button p-small">Найти тур</a>
             </div>
         </div>
@@ -159,7 +160,8 @@
             <div class="form__inner">
                 <div class="section-header">
                     <h2 class="form__title">Собери свой тур</h2>
-                    <p class="form__text p-normal">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров
+                    <p class="form__text p-normal">Идейные соображения высшего порядка,<br> а также рамки и место
+                        обучения кадров
                     </p>
                 </div>
                 <form class="form__body">
@@ -172,10 +174,22 @@
                                    placeholder="Введите Ваше имя">
                         </div>
 
-                        <div class="form__body__item">
+                        <!--<div class="form__body__item">
                             <label class="form__body__label p-normal" for="route">Направление</label>
                             <input class="form__body__input p-normal" id="route" type="text"
                                    placeholder="Куда хотите ехать">
+                            <img src="assets/icons/angle_brace.png" alt="" class="form__body__item-button">
+                        </div>-->
+
+                        <div class="form__body__item">
+                            <label class="form__body__label p-normal" for="route">Направление</label>
+                            <select name="direction" class="form__body__input select p-normal" id="route">
+                                <option value="placeholder" disabled selected>Куда хотите ехать</option>
+                                <option value="europe">Европа</option>
+                                <option value="inner">Внутренний туризм</option>
+                                <option value="south">Южные страны</option>
+                            </select>
+
                             <img src="assets/icons/angle_brace.png" alt="" class="form__body__item-button">
                         </div>
 
@@ -201,13 +215,12 @@
 
                         <div class="form__body__item">
                             <label class="form__body__label p-normal" for="dateFrom">Дата от</label>
-                            <input class="form__body__input p-normal" id="dateFrom" type="text"
-                                   placeholder="ДД.ММ.ГГГГ">
+                            <input class="form__body__input p-normal" id="dateFrom" type="date">
                         </div>
 
                         <div class="form__body__item">
                             <label class="form__body__label p-normal" for="dateTo">Дата до</label>
-                            <input class="form__body__input p-normal" id="dateTo" type="text" placeholder="ДД.ММ.ГГГГ">
+                            <input class="form__body__input p-normal" id="dateTo" type="date">
                         </div>
 
                     </div><!--Row3-->
@@ -235,7 +248,8 @@
 
                     <div class="form__body__checkbox">
                         <input class="form__body__check" type="checkbox" id="inputCheck">
-                        <label class="form__body__text p-small" for="inputCheck">Нажимая кнопку, я принимаю условия <a href="#">Лицензионного
+                        <label class="form__body__text p-small" for="inputCheck">Нажимая кнопку, я принимаю условия <a
+                                href="#">Лицензионного
                             договора</a>
                         </label>
                     </div>
@@ -256,7 +270,8 @@
 
                 <div class="section-header">
                     <h2 class="clients__title">Отзывы наших путешественников</h2>
-                    <p class="clients__text p-normal">Идейные соображения высшего порядка, а также рамки и место обучения
+                    <p class="clients__text p-normal">Идейные соображения высшего порядка, а также рамки и место
+                        обучения
                         кадров</p>
                 </div>
 
@@ -310,7 +325,8 @@
     <div class="photos">
         <div class="section-header">
             <h2 class="photos__title">Фотографии путешествий</h2>
-            <p class="photos__text p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+            <p class="photos__text p-normal">Идейные соображения высшего порядка, а также рамки и место обучения
+                кадров</p>
         </div>
 
         <div class="photos__row photos__row-1">
@@ -422,7 +438,8 @@
                 <img src="assets/images/footer_photo.png" alt="" class="offer__img">
                 <div class="offer__textBlock">
                     <h3 class="offer__title">Пора в путешествие вместе с нами!</h3>
-                    <p class="offer__text p-normal">Напиши на почту и узнай подробности на <a href="#">yourtour@gmail.com</a></p>
+                    <p class="offer__text p-normal">Напиши на почту и узнай подробности на <a href="#">yourtour@gmail.com</a>
+                    </p>
                 </div>
             </div>
         </div>
