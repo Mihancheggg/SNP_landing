@@ -184,8 +184,8 @@
 
                         <div class="form__body__item">
                             <label class="form__body__label p-normal" for="route">Направление</label>
-                            <select name="direction" class="form__body__input select p-normal" id="route">
-                                <option value="placeholder" disabled selected>Куда хотите ехать</option>
+                            <select name="direction" class="form__body__input select p-normal" id="route" required>
+                                <option hidden value="" selected>Куда хотите ехать</option>
                                 <option value="europe">Европа</option>
                                 <option value="inner">Внутренний туризм</option>
                                 <option value="south">Южные страны</option>
@@ -200,7 +200,7 @@
 
                         <div class="form__body__item">
                             <label class="form__body__label p-normal" for="email">Email</label>
-                            <input class="form__body__input p-normal phone" id="email" type="email"
+                            <input class="form__body__input p-normal" id="email" type="email"
                                    placeholder="example@mail.com">
                         </div>
 
@@ -229,7 +229,7 @@
                     <div class="form__body__row">
                         <div class="form__body__comment">
                             <label class="form__body__label p-normal">Комментарий</label>
-                            <textarea class="form__body__comment__textarea"></textarea>
+                            <textarea class="form__body__comment__textarea p-normal"></textarea>
                         </div>
                     </div><!--Row4-->
 
