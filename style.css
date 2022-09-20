@@ -539,7 +539,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 
 .form__body__radioButton:checked + .form__body__label:before {
-    background: #ffffff url("./assets/icons/bigDot.svg") no-repeat center center/12px 12px;
+    background: #ffffff url("./assets/icons/Ellipse.png") no-repeat center center/12px 12px;
 }
 
 .form__body__checkbox {
@@ -578,7 +578,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 
 .form__body__check:checked + .form__body__text:before {
-    background: #FFFFFF url("./assets/icons/Rectangle 36 (Stroke).svg") no-repeat center center/17px 10px;
+    background: #FFFFFF url("./assets/icons/check.png") no-repeat center center/17px 10px;
 }
 
 .form__body__text a {
@@ -824,6 +824,12 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     border-radius: 50px;
     padding: 7px 20px;
     transition: background 0.3s ease;
+}
+
+.stories__item__button-arrow{
+    width: 22px;
+    height: 15px;
+    background-size: contain;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1186,7 +1192,7 @@ footer {
     }
 
     .form__body__radioButton:checked + .form__body__label:before {
-        background: #ffffff url("./assets/icons/bigDot.svg") no-repeat center center/9px 9px;
+        background: #ffffff url("./assets/icons/Ellipse.png") no-repeat center center/9px 9px;
     }
 
     .form__body__text:before {
@@ -1196,7 +1202,7 @@ footer {
     }
 
     .form__body__check:checked + .form__body__text:before {
-        background: #FFFFFF url("./assets/icons/Rectangle 36 (Stroke).svg") no-repeat center center/17px 10px;
+        background: #FFFFFF url("./assets/icons/check.png") no-repeat center center/17px 10px;
     }
 
     /*Footer*/
