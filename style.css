@@ -160,6 +160,8 @@ h3 {
 }
 
 .phone-number {
+    color: #FFFFFF;
+    text-decoration: none;
     position: relative;
 }
 
