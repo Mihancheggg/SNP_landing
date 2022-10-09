@@ -741,15 +741,15 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     margin-right: 0;
 }
 
-.photos__row-1 img {
+.photos__four-images__odd img {
     width: calc((100% - 3 * 30px) / 4);
 }
 
-.photos__row-2 img {
+.photos__row__five-images img {
     width: calc((100% - 4 * 30px) / 5);
 }
 
-.photos__row-3 img {
+.photos__four-images__even img {
     width: calc((100% - 3 * 30px) / 4);
 }
 
@@ -1009,27 +1009,27 @@ footer {
 @media screen and (max-width: 1440px) {
 
     /*Photos*/
-    .photos__row-1 img:nth-child(2) {
+    .photos__four-images__odd img:nth-child(2) {
         display: none;
     }
 
-    .photos__row-2 img:nth-child(3) {
+    .photos__row__five-images img:nth-child(3) {
         display: none;
     }
 
-    .photos__row-3 img:nth-child(4) {
+    .photos__four-images__even img:nth-child(4) {
         display: none;
     }
 
-    .photos__row-1 img {
+    .photos__four-images__odd img {
         width: calc((100% - 2 * 20px) / 3);
     }
 
-    .photos__row-2 img {
+    .photos__row__five-images img {
         width: calc((100% - 3 * 20px) / 4);
     }
 
-    .photos__row-3 img {
+    .photos__four-images__even img {
         width: calc((100% - 2 * 20px) / 3);
     }
 }
@@ -1243,27 +1243,27 @@ footer {
     }
 
     /*Photos*/
-    .photos__row-1 img:nth-child(3) {
+    .photos__four-images__odd img:nth-child(3) {
         display: none;
     }
 
-    .photos__row-2 img:nth-child(2) {
+    .photos__row__five-images img:nth-child(2) {
         display: none;
     }
 
-    .photos__row-3 img:nth-child(3) {
+    .photos__four-images__even img:nth-child(3) {
         display: none;
     }
 
-    .photos__row-1 img {
+    .photos__four-images__odd img {
         width: calc((100% - 1 * 20px) / 2);
     }
 
-    .photos__row-2 img {
+    .photos__row__five-images img {
         width: calc((100% - 2 * 20px) / 3);
     }
 
-    .photos__row-3 img {
+    .photos__four-images__even img {
         width: calc((100% - 1 * 20px) / 2);
     }
 
@@ -1414,19 +1414,19 @@ footer {
         margin-right: 10px;
     }
 
-    .photos__row-1 img {
+    .photos__four-images__odd img {
         margin-right: 18px;
     }
 
-    .photos__row-1 img {
+    .photos__four-images__odd img {
         width: calc((100% - 1 * 18px) / 2);
     }
 
-    .photos__row-2 img {
+    .photos__row__five-images img {
         width: calc((100% - 2 * 10px) / 3);
     }
 
-    .photos__row-3 img {
+    .photos__four-images__even img {
         width: calc((100% - 1 * 10px) / 2);
     }
 
