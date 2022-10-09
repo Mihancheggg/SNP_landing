@@ -1284,6 +1284,10 @@ footer {
         max-width: none;
     }
 
+    .form__body__radio {
+        margin-top: 20px;
+    }
+
     /*Clients*/
     .clients__body {
         flex-direction: column;
@@ -1501,10 +1505,6 @@ footer {
 
     .form__body__comment__textarea {
         min-height: 132px;
-    }
-
-    .form__body__radio {
-        margin-top: 20px;
     }
 
     .form__body__radio-block__item .form__body__label {
