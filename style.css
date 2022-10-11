@@ -676,7 +676,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .clients__feedback__data {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .clients__name {
@@ -1066,6 +1066,17 @@ footer {
     .form__body__text {
         position: relative;
         padding-left: 37px;
+    }
+
+    /*Clients*/
+    .clients__feedback {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .clients__feedback__footer {
+        margin-top: 43px;
+        align-items: flex-end;
     }
 
     /*Photos*/
@@ -1513,16 +1524,6 @@ footer {
 
     .clients__title {
         letter-spacing: 0.02em;
-    }
-
-    .clients__feedback {
-        padding: 20px;
-        border-radius: 20px;
-    }
-
-    .clients__feedback__footer {
-        margin-top: 43px;
-        align-items: center;
     }
 
     .clients__feedback__data {
