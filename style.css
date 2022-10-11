@@ -1292,6 +1292,10 @@ footer {
         display: none;
     }
 
+    .stories__item__background{
+        translate: -30%;
+    }
+
     /*Offer*/
     .offer__inner {
         flex-direction: column;
